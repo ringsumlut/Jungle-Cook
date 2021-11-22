@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jungle Cook</title>
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+        <div class="editApp">
+            <!-- <img class="bgImg" src="images/recipe-hero.jpg" alt="bg"> -->
+            <div class="logoContainer">
+                <div class="title">The Jungle Cook</div>
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <div class="circle3"></div>
+                <div class="circle4"></div>
+            </div>
+            <div class="nav">
+                <label for="toggle">&#9776;</label>
+                <input type="checkbox" id="toggle" />
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse.html">Browse</a></li>
+                        <li><a href="create.html">Create Recipe</a></li>
+                        <li><a href="yourrecipes.html">Your Recipes</a></li>
+                        <li><span><a href="login.html">Logout</a></span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="edit">
+                <h4 id="hey">Hey Michael, create your recipe!</h4>
+                <div class="recipeInfo">
+                    <div class="custom-file-wrp">
+                        <div class="filename">
+                            Add Recipe Image
+                        </div>
+                        <div class="custom-file">
+                            <label for="fileupload">Attach file</label>
+                            <input type="file" id="fileupload">
+                        </div>
+                    </div>
+                    <div class="inputs">
+                        <input id="recipeName" placeholder="Recipe Name">
+                    </div>
+                    <div class="inputs">
+                        <input id="recipeDesc" placeholder="Recipe Description">
+                    </div>
+                    <div class="inputs">
+                        <input id="recipeTime" placeholder="Recipe Total Time">
+                    </div>
+                    <div class="inputs">
+                        <input id="recipeServing" placeholder="Recipe Serving Size">
+                    </div>
+                </div>
+
+                <div class="ingredients">
+                    <h5>Enter Ingredients:</h5>
+                    <div class="inputs">
+                        <input id="ing1" placeholder="Ingredient #1">
+
+                    </div>
+                    <div class="inputs">
+                        <input id="ing2" placeholder="Ingredient #2">
+                    </div>
+                    <div class="inputs">
+                        <input id="ing3" placeholder="Ingredient #3">
+                        <button onclick="add()" class="addMore" for="addIng">+</button>
+
+                    </div>
+                </div>
+
+                <div class="ingredients">
+                    <h5>Enter Instructions:</h5>
+                    <div class="inputs">
+                        <input id="ins1" placeholder="Instructions #1">
+
+                    </div>
+                    <div class="inputs">
+                        <input id="ins2" placeholder="Instructions #2">
+                    </div>
+                    <div class="inputs">
+                        <input id="ins3" placeholder="Instructions #3">
+                        <button onclick="add()" class="addMore" for="addIng">+</button>
+
+                    </div>
+                </div>
+                <div class="changeDiv">
+                    <button onclick="changeRecipe()" class="changeRecipe">Submit Changes</button>
+                </div>
+            </div>
+            <footer class=" footer">
+                <div class="copyRight">
+                    Copyright © 2019 The Jungle Cook
+                </div>
+                <div class="footerLinks">
+                    <a href="#">Login</a>
+                    <a href="#">Recipes by Category</a>
+                    <a href="#">Privacy and Copyright</a>
+                    <a href="#">Create Recipe</a>
+                    <a href="#">Your Recipes</a>
+                </div>
+                <div class="socialMedia">
+                    <img src="./images/facebook.svg">
+                    <img src="./images/instagram.svg">
+                </div>
+
+            </footer>
+        </div>
+    </body>
+
+</html>

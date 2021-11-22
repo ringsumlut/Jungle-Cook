@@ -1,0 +1,383 @@
+.editApp {
+  width: 100%;
+  min-height: 160%;
+  .edit {
+    h4 {
+      font-family: "Caveat";
+      font-size: 25px;
+      margin-top: 160px;
+      margin-left: 100px;
+    }
+    .custom-file-wrp {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 3px solid #000000;
+      width: 980px;
+      //height: 50px;
+      margin: 0 auto;
+    }
+    .filename {
+      background: #fff;
+      //   padding: 15px 15px;
+      border: 0px solid #ddd;
+      width: 855px;
+      margin-right: 15px;
+      margin-top: 80px;
+      color: #000;
+      font-family: "LatoLight";
+      font-size: 20px;
+    }
+
+    .custom-file {
+      background: #efa7a7;
+      border-radius: 24px;
+      width: 110px;
+      height: 36.2px;
+      font-family: "Caveat";
+      font-size: 17px;
+      text-align: center;
+      padding: 7px;
+      margin-top: 80px;
+      margin-bottom: 5px;
+    }
+    .custom-file input[type="file"] {
+      display: none;
+    }
+    .custom-file label {
+      cursor: pointer;
+      display: inline-block;
+      color: #000;
+    }
+    .inputs {
+      display: block;
+      width: 980px;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      margin-top: 20px;
+      border-bottom: 3px solid #000000;
+
+      input {
+        width: 980px;
+        margin-top: 20px;
+        border: 0px solid #000;
+        color: #000;
+        font-family: "LatoLight";
+        font-size: 20px;
+      }
+    }
+    .ingredients {
+      margin-top: 80px;
+
+      h5 {
+        margin-left: 100px;
+        font-family: "LatoBlack";
+        font-size: 20px;
+      }
+      .inputs {
+        position: relative;
+        input {
+          width: 980px;
+          margin-top: 20px;
+          border: 0px solid #000;
+          color: #000;
+          font-family: "LatoLight";
+          font-size: 20px;
+        }
+
+        button {
+          cursor: pointer;
+          position: absolute;
+          float: right;
+          width: 38px;
+          height: 38px;
+          border-radius: 100%;
+          border: none;
+          background: #efa7a7;
+          margin-bottom: -80px;
+          margin-left: -40px;
+          color: #fff;
+          font-size: 20px;
+        }
+      }
+    }
+    .changeDiv {
+      margin: 0 auto;
+      width: 422px;
+      justify-content: center;
+      align-items: center;
+
+      .changeRecipe {
+        cursor: pointer;
+        width: 422px;
+        height: 52px;
+        border: none;
+        border-radius: 26px;
+        background: #efa7a7;
+        margin-top: 80px;
+        font-family: "Caveat";
+        font-size: 25px;
+      }
+    }
+  }
+  .footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    display: block;
+    margin-bottom: -710px;
+    //   background-color: red;
+    color: white;
+    text-align: center;
+
+    .copyRight {
+      float: left;
+      margin-top: 15px;
+      margin-left: 40px;
+      font-family: "LatoItalic";
+      font-style: italic;
+      color: black;
+      overflow: hidden;
+      position: absolute;
+    }
+
+    .footerLinks {
+      text-align: center;
+      margin-top: 15px;
+      margin-right: -60px;
+
+      a {
+        font-family: "LatoItalic";
+        font-style: italic;
+        color: black;
+        font-size: 15px;
+        text-decoration: none;
+        justify-content: space-evenly;
+        margin-right: 15px;
+      }
+    }
+    .socialMedia {
+      position: absolute;
+      float: left;
+      bottom: -15px;
+      right: -10px;
+      width: 200px;
+      height: 50px;
+
+      // background-color: blue;
+      img {
+        width: 19px;
+        height: 19px;
+        margin-right: 40px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .editApp {
+    width: 100%;
+    min-height: 50%;
+    .edit {
+      h4 {
+        font-family: "Caveat";
+        font-size: 25px;
+        // margin-left: 100px;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 160px;
+      }
+      .custom-file-wrp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 3px solid #000000;
+        width: 558px;
+        //height: 50px;
+        margin: 0 auto;
+      }
+      .filename {
+        background: #fff;
+        //   padding: 15px 15px;
+        border: 0px solid #ddd;
+        width: 558px;
+        margin-right: 15px;
+        margin-top: 80px;
+        color: #000;
+        font-family: "LatoLight";
+        font-size: 16px;
+      }
+
+      .custom-file {
+        background: #efa7a7;
+        border-radius: 24px;
+        width: 120px;
+        height: 36.2px;
+        font-family: "Caveat";
+        font-size: 16px;
+        text-align: center;
+        padding: 7px;
+        margin-top: 80px;
+        margin-bottom: 5px;
+      }
+      .custom-file input[type="file"] {
+        display: none;
+      }
+      .custom-file label {
+        cursor: pointer;
+        display: inline-block;
+        color: #000;
+      }
+      .inputs {
+        display: block;
+        width: 558px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 20px;
+        border-bottom: 3px solid #000000;
+
+        input {
+          width: 558px;
+          margin-top: 20px;
+          border: 0px solid #000;
+          color: #000;
+          font-family: "LatoLight";
+          font-size: 16px;
+        }
+      }
+      .ingredients {
+        margin-top: 80px;
+
+        h5 {
+          margin-left: 230px;
+          font-family: "LatoBlack";
+          font-size: 16px;
+        }
+        .inputs {
+          position: relative;
+          input {
+            width: 558px;
+            margin-top: 20px;
+            border: 0px solid #000;
+            color: #000;
+            font-family: "LatoLight";
+            font-size: 16px;
+          }
+
+          button {
+            cursor: pointer;
+            position: absolute;
+            float: right;
+            width: 38px;
+            height: 38px;
+            border-radius: 100%;
+            border: none;
+            background: #efa7a7;
+            margin-bottom: -80px;
+            margin-left: -40px;
+            color: #fff;
+            font-size: 16px;
+          }
+        }
+      }
+      .changeDiv {
+        margin: 0 auto;
+        width: 354px;
+        justify-content: center;
+        align-items: center;
+
+        .changeRecipe {
+          cursor: pointer;
+          width: 354px;
+          height: 52px;
+          border: none;
+          border-radius: 26px;
+          background: #efa7a7;
+          margin-top: 80px;
+          font-family: "Caveat";
+          font-size: 25px;
+        }
+      }
+    }
+    .footer {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 50px;
+      overflow: hidden;
+      display: block;
+      margin-bottom: -410px;
+      //   background-color: red;
+      color: white;
+      text-align: center;
+
+      .copyRight {
+        float: left;
+        margin-top: 19px;
+        margin-left: 45px;
+        font-family: "LatoItalic";
+        font-style: italic;
+        color: black;
+        overflow: hidden;
+        position: absolute;
+        font-size: 10px;
+      }
+
+      .footerLinks {
+        text-align: center;
+        margin-top: 15px;
+        margin-right: -60px;
+
+        a {
+          font-family: "LatoItalic";
+          font-style: italic;
+          color: black;
+          font-size: 10px;
+          text-decoration: none;
+          justify-content: space-evenly;
+          margin-right: 5px;
+        }
+      }
+      .socialMedia {
+        position: absolute;
+        float: left;
+        bottom: -15px;
+        right: -10px;
+        width: 200px;
+        height: 50px;
+
+        // background-color: blue;
+        img {
+          width: 19px;
+          height: 19px;
+          margin-right: 40px;
+        }
+      }
+    }
+  }
+}
+
+@font-face {
+  font-family: "Caveat";
+  src: url("../fonts/Caveat-Regular.ttf");
+  font-style: italic;
+}
+@font-face {
+  font-family: "LatoLight";
+  src: url("../fonts/Lato/Lato-Light.ttf");
+}
+@font-face {
+  font-family: "LatoItalic";
+  src: url("../fonts/Lato/Lato-Italic.ttf");
+}
+@font-face {
+  font-family: "LatoBlack";
+  src: url("../fonts/Lato/Lato-Black.ttf");
+}

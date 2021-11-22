@@ -1,0 +1,279 @@
+.loginApp {
+  background-color: #ffd972;
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  .login {
+    // background-color: #ffd972;
+
+    .lsbox {
+      // width: 600px;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+
+      // background-color: gray;
+
+      .loginHere {
+        width: 220px;
+        height: 300px;
+        // background-color: red;
+        align-items: center;
+        text-align: center;
+        margin-top: 300px;
+        margin-right: 200px;
+        padding: 20px;
+
+        h3 {
+          font-family: "LatoLight";
+          font-size: 30px;
+          font-weight: 100;
+          margin: 20px;
+          // background-color: red;
+          width: 170px;
+          text-align: left;
+        }
+        .loginInput {
+          width: 206px;
+          border: 0;
+          outline: 0;
+          background: transparent;
+          border-bottom: 2px solid black;
+          margin: 20px;
+        }
+        .loginButton {
+          width: 209px;
+          height: 52px;
+          border: none;
+          border-radius: 20px;
+          text-align: center;
+          background-color: #ffd972;
+          box-shadow: 0 5px 3px 0px #707070;
+          margin: 20px;
+          font-family: "Caveat";
+          font-size: 25px;
+        }
+      }
+      .signUp {
+        width: 270px;
+        height: 420px;
+        margin-top: 200px;
+        // background-color: blue;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        p {
+          font-family: "LatoItalic";
+          font-size: 12px;
+          text-align: left;
+          padding-left: 30px;
+        }
+        h3 {
+          font-family: "LatoLight";
+          font-size: 30px;
+          font-weight: 100;
+          margin: 30px;
+          // background-color: red;
+          width: 110px;
+          text-align: left;
+        }
+        .loginInput {
+          width: 206px;
+          border: 0;
+          outline: 0;
+          background: transparent;
+          border-bottom: 2px solid black;
+          margin: 20px;
+        }
+        .loginButton {
+          width: 209px;
+          height: 52px;
+          border: none;
+          border-radius: 20px;
+          text-align: center;
+          background-color: #ffd972;
+          box-shadow: 0 5px 3px 0px #707070;
+          margin: 20px;
+          font-family: "Caveat";
+          font-size: 25px;
+        }
+      }
+    }
+  }
+  .footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    display: block;
+    //   background-color: red;
+    color: white;
+    text-align: center;
+
+    .copyRight {
+      float: left;
+      margin-top: 15px;
+      margin-left: 40px;
+      font-family: "LatoItalic";
+      font-style: italic;
+      color: black;
+      overflow: hidden;
+      position: absolute;
+    }
+
+    .footerLinks {
+      text-align: center;
+      margin-top: 15px;
+      margin-right: -60px;
+
+      a {
+        font-family: "LatoItalic";
+        font-style: italic;
+        color: black;
+        font-size: 15px;
+        text-decoration: none;
+        justify-content: space-evenly;
+        margin-right: 15px;
+      }
+    }
+    .socialMedia {
+      position: absolute;
+      float: left;
+      bottom: -15px;
+      right: -10px;
+      width: 200px;
+      height: 50px;
+
+      // background-color: blue;
+      img {
+        width: 19px;
+        height: 19px;
+        margin-right: 40px;
+      }
+    }
+  }
+}
+@font-face {
+  font-family: "Caveat";
+  src: url("../../fonts/Caveat-Regular.ttf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "LatoLight";
+  src: url("../../fonts/Lato/Lato-Light.ttf");
+}
+@font-face {
+  font-family: "LatoItalic";
+  src: url("../../fonts/Lato/Lato-Italic.ttf");
+}
+
+@media screen and (max-width: 768px) {
+  .loginApp {
+    background-color: #ffd972;
+    min-height: 100%;
+    overflow: auto;
+    .login {
+      width: 100%;
+      // min-height: 100%;
+      padding-top: 40px;
+      margin-top: 100px;
+      align-items: center;
+      justify-content: center;
+      .lsbox {
+        height: 500px;
+        width: 200px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .loginHere {
+          width: 50px;
+          height: 300px;
+          // background-color: red;
+          align-items: center;
+          text-align: center;
+          margin-top: 250px;
+          justify-content: center;
+          .loginButton {
+            width: 207px;
+            height: 52px;
+            border: none;
+            border-radius: 20px;
+            text-align: center;
+            background-color: #ffd972;
+            box-shadow: 0 5px 3px 0px #707070;
+            margin: 20px;
+            font-family: "Caveat";
+            font-size: 25px;
+          }
+        }
+        .signUp {
+          width: 270px;
+          height: 420px;
+          margin-top: 10px;
+          //background-color: blue;
+          align-items: center;
+          text-align: center;
+          justify-content: center;
+          .loginButton {
+            width: 207px;
+            height: 52px;
+            border: none;
+            border-radius: 20px;
+            text-align: center;
+            background-color: #ffd972;
+            box-shadow: 0 5px 3px 0px #707070;
+            margin: 20px;
+            font-family: "Caveat";
+            font-size: 25px;
+          }
+        }
+      }
+    }
+    .footer {
+      position: absolute;
+      height: 50px;
+      bottom: 0;
+      width: 100%;
+      display: block;
+      margin-bottom: 10px;
+      overflow: hidden;
+      //background-color: green;
+      text-align: center;
+
+      .copyRight {
+        font-size: 10px;
+        margin-left: 10px;
+        margin-top: 20px;
+      }
+      .footerLinks {
+        margin-right: 10px;
+        a {
+          font-size: 10px;
+        }
+      }
+      .socialMedia {
+        margin-left: 70px;
+        img {
+          width: 19px;
+          height: 19px;
+          margin-right: 40px;
+          // margin-top: 135px;
+        }
+      }
+    }
+  }
+}
+
+/*login footer*/
+
+@font-face {
+  font-family: "LatoItalic";
+  src: url("../fonts/Lato/Lato-Italic.ttf");
+}

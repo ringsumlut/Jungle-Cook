@@ -1,0 +1,97 @@
+.nav {
+  position: absolute;
+  float: left;
+  top: 35px;
+  right: 50px;
+  // width: 50px;
+  height: 50px;
+  // line-height: 70px;
+  // background-color: aqua;
+  font-size: 20px;
+
+  ul li {
+    padding-left: 30px;
+    padding-right: 30px;
+    list-style: none;
+    display: inline-block;
+  }
+
+  label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+    // background-color: red;
+  }
+  #toggle {
+    display: none;
+  }
+  .menu {
+    a {
+      display: inline-block;
+      padding: 8px;
+      // background-color: #dddddd;
+      justify-content: space-evenly;
+      text-decoration: none;
+      color: black;
+      font-family: "Caveat";
+    }
+    span a {
+      width: 158px;
+      border-radius: 20px;
+      text-align: center;
+      background-color: #ffd972;
+      box-shadow: 0 5px 3px 0px #707070;
+    }
+  }
+  a:active {
+    text-decoration: underline;
+  }
+}
+
+@font-face {
+  font-family: "Caveat";
+  src: url("../../fonts/Caveat-Regular.ttf");
+  font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    position: absolute;
+    float: left;
+    top: 20px;
+    right: 50px;
+    z-index: 1;
+    label {
+      display: block;
+      cursor: pointer;
+      margin-top: -30px;
+    }
+    #toggle:checked + .menu {
+      display: block;
+    }
+    .menu {
+      //background-color: rebeccapurple;
+      text-align: right;
+      width: 200px;
+      margin-top: 20px;
+      margin-right: -30px;
+      padding-right: 30px;
+      display: none;
+
+      a {
+        //background-color: red;
+        display: block;
+        margin: 0;
+      }
+      span a {
+        text-align: right;
+        padding-right: 55px;
+        background-color: transparent;
+        box-shadow: none;
+      }
+    }
+  }
+}

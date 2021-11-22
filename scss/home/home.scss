@@ -1,0 +1,200 @@
+.homeApp {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 0, 0, 0.4),
+      rgba(255, 0, 0, 0.4)
+    ),
+    url("../images/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .home {
+    .circle-holder {
+      width: 500px;
+      height: 500px;
+      // background-color: gray;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      margin-top: 50px;
+
+      .little-circle {
+        width: 150px;
+        height: 150px;
+        background-color: #fcbcb8;
+        border-radius: 150px;
+        margin-left: 280px;
+        margin-bottom: 330px;
+        position: absolute;
+
+        p {
+          margin: auto;
+          margin-top: 55px;
+          width: 90px;
+          // background-color: red;
+          vertical-align: middle;
+          font-family: "lato";
+          font-size: 10px;
+          text-align: center;
+          font-style: italic;
+        }
+      }
+      .big-circle {
+        width: 330px;
+        height: 330px;
+        background-color: #ffd972;
+        border-radius: 50%;
+        margin-bottom: 40px;
+        z-index: 0;
+        text-align: center;
+        h1 {
+          // background-color: blue;
+          margin: auto;
+          margin-top: 50px;
+          line-height: 100px;
+          vertical-align: middle;
+          font-family: "Caveat";
+          font-size: 24px;
+          text-align: center;
+        }
+        p {
+          width: 150px;
+          height: 80px;
+          margin: auto;
+          vertical-align: middle;
+          font-family: "lato";
+          font-size: 13px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    display: block;
+    //   background-color: red;
+    color: white;
+    text-align: center;
+
+    .copyRight {
+      float: left;
+      margin-top: 15px;
+      margin-left: 40px;
+      font-family: "LatoItalic";
+      font-style: italic;
+      color: black;
+      overflow: hidden;
+      position: absolute;
+    }
+
+    .footerLinks {
+      text-align: center;
+      margin-top: 15px;
+      margin-right: -60px;
+
+      a {
+        font-family: "LatoItalic";
+        font-style: italic;
+        color: black;
+        font-size: 15px;
+        text-decoration: none;
+        justify-content: space-evenly;
+        margin-right: 15px;
+      }
+    }
+    .socialMedia {
+      position: absolute;
+      float: left;
+      bottom: -15px;
+      right: -10px;
+      width: 200px;
+      height: 50px;
+
+      // background-color: blue;
+      img {
+        width: 19px;
+        height: 19px;
+        margin-right: 40px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .homeApp {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 0, 0, 0.4),
+        rgba(255, 0, 0, 0.4)
+      ),
+      url("../images/hero.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    .home {
+      // min-height: 100%;
+      // height: auto !important;
+      // width: 100%;
+
+      .circle-holder {
+        .little-circle {
+          margin-left: 200px;
+          margin-top: -60px;
+        }
+      }
+    }
+    .footer {
+      position: absolute;
+      height: 50px;
+      bottom: 0;
+      width: 100%;
+      display: block;
+      overflow: hidden;
+      //background-color: green;
+      text-align: center;
+
+      .copyRight {
+        font-size: 10px;
+        margin-left: 10px;
+        margin-top: 20px;
+      }
+      .footerLinks {
+        margin-right: 10px;
+        a {
+          font-size: 10px;
+        }
+      }
+      .socialMedia {
+        img {
+          width: 19px;
+          height: 19px;
+          margin-right: 40px;
+          // margin-top: 135px;
+        }
+      }
+    }
+  }
+}
+
+/*home footer*/
+
+@font-face {
+  font-family: "LatoItalic";
+  src: url("../fonts/Lato/Lato-Italic.ttf");
+}

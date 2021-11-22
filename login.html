@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Jungle Cook</title>
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <div class="loginApp">
+            <div class="logoContainer">
+                <div class="title">The Jungle Cook</div>
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <div class="circle3"></div>
+                <div class="circle4"></div>
+            </div>
+            <div class="nav">
+                <label for="toggle">&#9776;</label>
+                <input type="checkbox" id="toggle" />
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse.html">Browse</a></li>
+                        <li><a href="create.html">Create Recipe</a></li>
+                        <li><span><a href="login.html">Login</a></span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="login">
+
+                <div class="lsbox">
+                    <form id="signin-form">
+                        <div class="loginHere">
+                            <h3>Login Here!</h3>
+                            <input id="signin-email" class="loginInput" type="email" placeholder="Email Address"
+                                name="email" required>
+                            <input id="signin-password" class="loginInput" type="password" placeholder="Password"
+                                name="password">
+                            <button id="login" class="loginButton" onclick="disable_enable('login');"
+                                required>Login</button>
+                        </div>
+                    </form>
+                    <div class="signUp">
+                        <form id="signup-form">
+
+                            <p>don't have an account?</p>
+                            <h3>Sign Up!</h3>
+                            <input id="firstname" class="loginInput" type="text" placeholder="First Name"
+                                name="firstname" required>
+                            <input id="lastname" class="loginInput" type="text" placeholder="Last Name" name="lastname"
+                                required>
+                            <input id="signup-email" class="loginInput" type="email" placeholder="Email Address"
+                                name="email" required>
+                            <input id="signup-password" class="loginInput" type="password" placeholder="Password"
+                                name="password" required>
+                            <button id="createUser" class="loginButton">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="copyRight">
+                    Copyright © 2019 The Jungle Cook
+                </div>
+                <div class="footerLinks">
+                    <a href="#">Login</a>
+                    <a href="#">Recipes by Category</a>
+                    <a href="#">Privacy and Copyright</a>
+                    <a href="#">Create Recipe</a>
+                    <a href="#">Your Recipes</a>
+                </div>
+                <div class="socialMedia">
+                    <img src="./images/facebook.svg">
+                    <img src="./images/instagram.svg">
+                </div>
+            </footer>
+        </div>
+
+
+
+        <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-firestore.js"></script>
+
+        <script defer src="/__/firebase/9.3.0/firebase-app-compat.js"></script>
+        <script defer src="/__/firebase/9.3.0/firebase-auth-compat.js"></script>
+        <script defer src="/__/firebase/9.3.0/firebase-database-compat.js"></script>
+        <script defer src="/__/firebase/9.3.0/firebase-firestore-compat.js"></script>
+        <script defer src="/__/firebase/9.3.0/firebase-functions-compat.js"></script>
+        <script defer src="/__/firebase/9.3.0/firebase-messaging-compat.js"></script>
+        <script defer src="/__/firebase/9.3.0/firebase-storage-compat.js"></script>
+        <script defer src="/__/firebase/9.3.0/firebase-analytics-compat.js"></script>
+        <script defer src="/__/firebase/9.3.0/firebase-remote-config-compat.js"></script>
+        <script defer src="/__/firebase/9.3.0/firebase-performance-compat.js"></script>
+        <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyAXtdV2iT-3Rd3IZ_e_Sn1_-7bMZHdgknk",
+                authDomain: "homework-7-c5ce5.firebaseapp.com",
+                projectId: "homework-7-c5ce5",
+                storageBucket: "homework-7-c5ce5.appspot.com",
+                messagingSenderId: "759620831611",
+                appId: "1:759620831611:web:4009b92f66159af8a195de",
+                measurementId: "G-TQDD35R0DP"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+
+
+
+            const auth = firebase.auth(); // <----- this is where you define auth
+            const db = firebase.firestore();
+        </script>
+        <script src="app/app.js"></script>
+    </body>
+
+</html>
